@@ -2,7 +2,7 @@
   <arg name="model" default="$(find rtr_double_arm_v7_description)/urdf/RTRDoubleArmV7A.urdf.xacro"/>
     
   <arg name="gui" default="True" />
-  <arg name="rviz_config" default="$(find rtr_double_arm_v7_description)/configs/display.rviz"/>
+  <arg name="rviz_config" default="$(find rtr_double_arm_v7_description)/launch/config/display.rviz"/>
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg model)'"/>
   <param name="use_gui" value="$(arg gui)"/>
