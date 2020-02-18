@@ -1,0 +1,1018 @@
+Panels:
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: PointCloud
+  - Class: rviz/Displays
+    Help Height: 75
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /RobotModel1
+        - /Imu1
+        - /Imu1/Status1
+      Splitter Ratio: 0.5
+    Tree Height: 143
+  - Class: rviz/Displays
+    Help Height: 75
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1/Tree1
+        - /RobotModel1
+        - /Image1
+        - /PointCloud21
+        - /PointCloud1
+      Splitter Ratio: 0.3763636350631714
+    Tree Height: 215
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 0; 0; 0
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        ARM:
+          Value: true
+        All Enabled: true
+        BLOCK:
+          Value: true
+        BOOM:
+          Value: true
+        HANDBASE:
+          Value: true
+        HANDLNK_I:
+          Value: true
+        HANDLNK_O:
+          Value: true
+        HANDSLNK_I:
+          Value: true
+        HANDSLNK_O:
+          Value: true
+        HANDTIP_L:
+          Value: true
+        HANDTIP_U:
+          Value: true
+        MANIARM:
+          Value: true
+        MANIBOOM:
+          Value: true
+        MANIELBOW:
+          Value: true
+        MANIFNG_L:
+          Value: true
+        MANIFNG_U:
+          Value: true
+        MFRAME:
+          Value: true
+        MNP_SWING:
+          Value: true
+        PUSHROD:
+          Value: true
+        TFRAME:
+          Value: true
+        TOHKU_PITCH:
+          Value: true
+        TOHKU_ROLL:
+          Value: true
+        TOHKU_TIP_01:
+          Value: true
+        TOHKU_TIP_02:
+          Value: true
+        UFRAME:
+          Value: true
+        Velodyne:
+          Value: true
+        WHEEL_L0:
+          Value: true
+        WHEEL_L1:
+          Value: true
+        WHEEL_L2:
+          Value: true
+        WHEEL_L3:
+          Value: true
+        WHEEL_R0:
+          Value: true
+        WHEEL_R1:
+          Value: true
+        WHEEL_R2:
+          Value: true
+        WHEEL_R3:
+          Value: true
+        WIRE_GUARD_L:
+          Value: true
+        WIRE_GUARD_R:
+          Value: true
+        YAWJOINT:
+          Value: true
+        base_footprint:
+          Value: true
+        odom:
+          Value: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_footprint:
+          TFRAME:
+            MFRAME:
+              BLOCK:
+                BOOM:
+                  ARM:
+                    TOHKU_PITCH:
+                      TOHKU_ROLL:
+                        TOHKU_TIP_01:
+                          {}
+                        TOHKU_TIP_02:
+                          {}
+            UFRAME:
+              MNP_SWING:
+                MANIBOOM:
+                  MANIARM:
+                    MANIELBOW:
+                      YAWJOINT:
+                        HANDBASE:
+                          HANDLNK_I:
+                            {}
+                          HANDLNK_O:
+                            {}
+                          MANIFNG_L:
+                            HANDTIP_L:
+                              {}
+                          MANIFNG_U:
+                            HANDTIP_U:
+                              {}
+                          PUSHROD:
+                            HANDSLNK_I:
+                              {}
+                            HANDSLNK_O:
+                              {}
+            Velodyne:
+              {}
+            WHEEL_L0:
+              {}
+            WHEEL_L1:
+              {}
+            WHEEL_L2:
+              {}
+            WHEEL_L3:
+              {}
+            WHEEL_R0:
+              {}
+            WHEEL_R1:
+              {}
+            WHEEL_R2:
+              {}
+            WHEEL_R3:
+              {}
+            WIRE_GUARD_L:
+              {}
+            WIRE_GUARD_R:
+              {}
+        odom:
+          {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        ARM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        All Links Enabled: true
+        BLOCK:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        BOOM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        HANDBASE:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDLNK_I:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDLNK_O:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDSLNK_I:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDSLNK_O:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDTIP_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDTIP_U:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Link Tree Style: Links in Alphabetic Order
+        MANIARM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIBOOM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIELBOW:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIFNG_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIFNG_U:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MNP_SWING:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        PUSHROD:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TOHKU_PITCH:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TOHKU_ROLL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TOHKU_TIP_01:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TOHKU_TIP_02:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        UFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Velodyne:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        WHEEL_L0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WIRE_GUARD_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WIRE_GUARD_R:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        YAWJOINT:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /DoubleArmV7_RTR/FRAME_FRONT_CAMERA/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 6.312791347503662
+        Min Value: -0.48081648349761963
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.029999999329447746
+      Style: Spheres
+      Topic: /point_map
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 2.8341641426086426
+        Min Value: -1.7584768533706665
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Spheres
+      Topic: /DoubleArmV7_RTR/Velodyne/point_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Acceleration_Scaling_Factor: 1
+      Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Move Group Namespace: ""
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
+      MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Cartesian_Path: false
+      MoveIt_Use_Constraint_Aware_IK: true
+      MoveIt_Warehouse_Host: 127.0.0.1
+      MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
+      Name: MotionPlanning
+      Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
+        Links:
+          ARM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          All Links Enabled: true
+          BLOCK:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          BOOM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          HANDBASE:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDLNK_I:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDLNK_O:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDSLNK_I:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDSLNK_O:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDTIP_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDTIP_U:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Link Tree Style: Links in Alphabetic Order
+          MANIARM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIBOOM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIELBOW:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIFNG_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIFNG_U:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MNP_SWING:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          PUSHROD:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_PITCH:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_ROLL:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_TIP_01:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_TIP_02:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          UFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Velodyne:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          WHEEL_L0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WIRE_GUARD_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WIRE_GUARD_R:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          YAWJOINT:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Loop Animation: false
+        Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: 0.05 s
+        Trail Step Size: 1
+        Trajectory Topic: /move_group/display_planned_path
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.07999999821186066
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0
+        Joint Violation Color: 255; 0; 255
+        Planning Group: both_arms
+        Query Goal State: true
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 0.8999999761581421
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.20000000298023224
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          ARM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          All Links Enabled: true
+          BLOCK:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          BOOM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          HANDBASE:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDLNK_I:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDLNK_O:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDSLNK_I:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDSLNK_O:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDTIP_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HANDTIP_U:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Link Tree Style: Links in Alphabetic Order
+          MANIARM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIBOOM:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIELBOW:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIFNG_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MANIFNG_U:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          MNP_SWING:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          PUSHROD:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_PITCH:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_ROLL:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_TIP_01:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          TOHKU_TIP_02:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          UFRAME:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Velodyne:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          WHEEL_L0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_L3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WHEEL_R3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WIRE_GUARD_L:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WIRE_GUARD_R:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          YAWJOINT:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 1
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+      Velocity_Scaling_Factor: 1
+    - Alpha: 1
+      Class: rviz_plugin_tutorials/Imu
+      Color: 204; 51; 204
+      Enabled: true
+      History Length: 1
+      Name: Imu
+      Topic: /DoubleArmV7_RTR/FRAME_GYRO
+      Unreliable: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 186; 189; 182
+    Default Light: true
+    Fixed Frame: base_footprint
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 8.650411605834961
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.3451569974422455
+        Y: -0.6937293410301208
+        Z: 0.5752285718917847
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.45539945363998413
+      Target Frame: base_footprint
+      Value: Orbit (rviz)
+      Yaw: 2.0217607021331787
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1025
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000029500000368fc020000000cfc0000003d00000117000000c900fffffffa000000000100000002fb000000100044006900730070006c0061007900730100000000ffffffff0000015600fffffffb0000001200530065006c0065006300740069006f006e00000000000000016a0000007400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007300000001370000015f000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006502000000ac000000f9000002750000017dfb000000100044006900730070006c00610079007300000001a6000002150000000000000000fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000015a0000024b0000019b00ffffff000000010000010f00000363fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d00000363000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000073f000000a9fc0100000002fb0000000a0049006d00610067006503000000f90000013f000001ed0000019bfb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073d00000039fc0100000002fb0000000800540069006d006501000000000000073d000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000004a20000036800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1853
+  X: 67
+  Y: 27
