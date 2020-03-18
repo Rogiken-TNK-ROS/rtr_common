@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-
+  <xacro:include filename="$(find rtr_double_arm_v7_description)/urdf/common.xacro"/>
   <!-- Material -->
   <material name="uframe_color">
     <color rgba="1 0.85 0.33 1"/>
