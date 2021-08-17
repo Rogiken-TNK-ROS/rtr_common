@@ -13,9 +13,27 @@
   
   <!-- == TOHOKU ARM == -->
   <xacro:include filename="$(find rtr_double_arm_v7_description)/urdf/TOHOKU_ARM.urdf.xacro"/>
-
+  <!-- Transmission settings -->
+  <xacro:joint_position_trans_v0 name="MFRAME"/>
+  <xacro:joint_position_trans_v0 name="BLOCK"/>
+  <xacro:joint_position_trans_v0 name="BOOM"/>
+  <xacro:joint_position_trans_v0 name="ARM"/>
+  <xacro:joint_position_trans_v0 name="TOHKU_ROLL"/>
+  <xacro:joint_position_trans_v0 name="TOHKU_PITCH"/>
+  <xacro:joint_effort_trans_v0 name="TOHKU_TIP_01"/>
+  <xacro:joint_effort_trans_v0 name="TOHKU_TIP_02"/>
+  
   <!-- == MANI ARM == -->
   <xacro:include filename="$(find rtr_double_arm_v7_description)/urdf/MANI_ARM.urdf.xacro"/>
+  <!-- Transmission Settings -->
+  <xacro:joint_position_trans_v0 name="UFRAME"/>
+  <xacro:joint_position_trans_v0 name="MNP_SWING"/>
+  <xacro:joint_position_trans_v0 name="MANIBOOM"/>
+  <xacro:joint_position_trans_v0 name="MANIARM"/>
+  <xacro:joint_position_trans_v0 name="MANIELBOW"/>
+  <xacro:joint_position_trans_v0 name="YAWJOINT"/>
+  <xacro:joint_position_trans_v0 name="HANDBASE"/>
+  <xacro:joint_effort_trans_v0 name="PUSHROD"/>
 
   <!-- == Base == -->
   <xacro:include filename="$(find rtr_double_arm_v7_description)/urdf/BASE-AGX.urdf.xacro"/>

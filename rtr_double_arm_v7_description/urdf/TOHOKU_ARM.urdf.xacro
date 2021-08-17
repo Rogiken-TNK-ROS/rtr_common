@@ -249,16 +249,4 @@
     <child link="TOHKU_TIP_02" />
     <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
   </joint>
-
-  <!-- Transmission settings -->
-  <!-- Effort Interface -->
-  <xacro:joint_effort_trans_v0 name="MFRAME"/>
-  <xacro:joint_effort_trans_v0 name="BLOCK"/>
-  <xacro:joint_effort_trans_v0 name="BOOM"/>
-  <xacro:joint_effort_trans_v0 name="ARM"/>
-  <xacro:joint_effort_trans_v0 name="TOHKU_ROLL"/>
-  <xacro:joint_effort_trans_v0 name="TOHKU_PITCH"/>
-  <xacro:joint_effort_trans_v0 name="TOHKU_TIP_01"/>
-  <xacro:joint_effort_trans_v0 name="TOHKU_TIP_02"/>
-
 </robot>

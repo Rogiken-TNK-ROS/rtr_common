@@ -482,17 +482,5 @@
     <parent link="HANDBASE" />
     <child link="HANDLNK_O" />
     <limit lower="-3.00022098418" upper="3.00022098418" effort="100.0" velocity="573.0" />
-  </joint>
-
-  <!-- Transmission Settings -->
-  <!-- Effort Interface -->
-  <xacro:joint_effort_trans_v0 name="UFRAME"/>
-  <xacro:joint_effort_trans_v0 name="MNP_SWING"/>
-  <xacro:joint_effort_trans_v0 name="MANIBOOM"/>
-  <xacro:joint_effort_trans_v0 name="MANIARM"/>
-  <xacro:joint_effort_trans_v0 name="MANIELBOW"/>
-  <xacro:joint_effort_trans_v0 name="YAWJOINT"/>
-  <xacro:joint_effort_trans_v0 name="HANDBASE"/>
-  <xacro:joint_effort_trans_v0 name="PUSHROD"/>
-  
+  </joint>  
 </robot>
