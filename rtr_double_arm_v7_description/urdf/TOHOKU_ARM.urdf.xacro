@@ -154,13 +154,15 @@
       <origin rpy="${-M_PI/2} ${-M_PI/2} 0"/>
       <material name="tohku_tip_color"/>
       <geometry>
-        <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/>
+        <!-- <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/> -->
+        <mesh filename="package://rtr_double_arm_v7_description/meshes/rtr_tip_01.stl"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="${-M_PI/2} ${-M_PI/2} 0"/>
       <geometry>
-        <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/>
+        <!-- <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/> -->
+        <mesh filename="package://rtr_double_arm_v7_description/meshes/rtr_tip_01.stl"/>
       </geometry>      
     </collision>
     <inertial>
@@ -176,13 +178,15 @@
       <origin rpy="${-M_PI/2} ${-M_PI/2} 0"/>
       <material name="tohku_tip_color"/>
       <geometry>
-        <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/>
+        <!-- <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/> -->
+        <mesh filename="package://rtr_double_arm_v7_description/meshes/rtr_tip_01.stl"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="${-M_PI/2} ${-M_PI/2} 0"/>
       <geometry>
-        <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/>
+        <!-- <mesh filename="package://rtr_double_arm_v7_description/meshes/tohku_hand_tip.stl"/> -->
+        <mesh filename="package://rtr_double_arm_v7_description/meshes/rtr_tip_01.stl"/>
       </geometry>      
     </collision>
     <inertial>
