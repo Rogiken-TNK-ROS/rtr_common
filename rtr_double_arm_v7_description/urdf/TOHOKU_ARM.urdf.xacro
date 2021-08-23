@@ -196,6 +196,8 @@
     </inertial>
   </link>
 
+  <link name="TOHKU_EEF"/>
+  
   <!-- Joint -->
   <joint name="MFRAME" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
@@ -252,5 +254,10 @@
     <parent link="TOHKU_ROLL" />
     <child link="TOHKU_TIP_02" />
     <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
+  </joint>
+  <joint name="TOHKU_EEF" type="fixed">
+    <origin xyz="0 0 -0.735" rpy="0.0 -0.0 0.0" />
+    <parent link="TOHKU_ROLL" />
+    <child link="TOHKU_EEF" />
   </joint>
 </robot>
