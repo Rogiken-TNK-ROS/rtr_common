@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rtr_quadcopter_description</name>
+  <version>0.0.0</version>
+  <description>RTR quadcopter_description package</description>
+
+  <maintainer email="yuki.st16@gmail.com">Yuki Onishi</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

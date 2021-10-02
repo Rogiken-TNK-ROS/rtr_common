@@ -1,0 +1,200 @@
+<robot name="quadcopter_wrs" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="side" value="0.5"/>
+
+  <link name="BODY">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.15 0.15 0.07"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="CAMERA_T" type="revolute">
+    <parent link="BODY"/>
+    <child link="CAMERA_T"/>
+    <origin xyz="0 0 -0.05"/>
+    <limit lower="${-pi}" upper="0" velocity="${pi/2}" effort="1"/>
+    <axis xyz="0 -1 0"/>
+  </joint>
+
+  <link name="CAMERA_T">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="CameraJoint" type="fixed">
+    <parent link="CAMERA_T"/>
+    <child link="Camera"/>
+    <origin xyz="0.03 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+  </joint>
+
+  <link name="Camera">
+    <visual>
+      <geometry>
+        <cylinder radius="0.003" length="0.01"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="Camera2Joint" type="fixed">
+    <parent link="CAMERA_T"/>
+    <child link="Camera2"/>
+    <origin xyz="0.02 0 -0.02" rpy="${-pi/2} 0 ${-pi/2}"/>
+  </joint>
+
+  <link name="Camera2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.003" length="0.01"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <!-- Legs -->
+  <xacro:macro name="leg" params="name translation">
+    <joint name="${name}Joint" type="fixed">
+      <parent link="BODY"/>
+      <child link="${name}"/>
+      <origin xyz="${translation}"/>
+    </joint>
+
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <box size="0.01 0.01 0.08"/>
+        </geometry>
+        <material name="white">
+          <color rgba="1.0 1.0 1.0 1.0"/>
+        </material>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:leg name="LEG0" translation="0.06 -0.06 -0.075"/>
+  <xacro:leg name="LEG1" translation="0.06 0.06 -0.075"/>
+  <xacro:leg name="LEG2" translation="-0.06 0.06 -0.075"/>
+  <xacro:leg name="LEG3" translation="-0.06 -0.06 -0.075"/>
+
+  <!-- Arms -->
+  <xacro:macro name="arm" params="name rotation">
+    <joint name="${name}Joint" type="fixed">
+      <parent link="BODY"/>
+      <child link="${name}"/>
+      <origin rpy="${rotation}"/>
+    </joint>
+
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <box size="0.02 0.6 0.02"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:arm name="ARM02" rotation="0 0 ${pi/4}"/>
+  <xacro:arm name="ARM13" rotation="0 0 ${-pi/4}"/>
+
+  <!-- Rotors -->
+  <xacro:macro name="rotor" params="name parent translation">
+    <joint name="${name}Joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <origin xyz="${translation}"/>
+    </joint>
+
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <box size="0.05 0.05 0.03"/>
+        </geometry>
+        <material name="red"/>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:rotor name="ROTOR0" parent="ARM02" translation="0 -0.3 0"/>
+  <xacro:rotor name="ROTOR1" parent="ARM13" translation="0 0.3 0"/>
+  <xacro:rotor name="ROTOR2" parent="ARM02" translation="0 0.3 0"/>
+  <xacro:rotor name="ROTOR3" parent="ARM13" translation="0 -0.3 0"/>
+
+  <!-- Propellers -->
+  <xacro:macro name="propeller" params="name parent">
+    <joint name="${name}Joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <origin xyz="0 0 0.02"/>
+    </joint>
+
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <box size="0.3 0.03 0.005"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:propeller name="PROP0" parent="ROTOR0"/>
+  <xacro:propeller name="PROP1" parent="ROTOR1"/>
+  <xacro:propeller name="PROP2" parent="ROTOR2"/>
+  <xacro:propeller name="PROP3" parent="ROTOR3"/>
+
+  <!-- Guards -->
+  <xacro:macro name="guard" params="name parent rotation">
+    <joint name="${name}Joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <origin rpy="${rotation}"/>
+    </joint>
+
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <box size="0.405 0.008 0.008"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <visual>
+        <geometry>
+          <box size="0.008 0.405 0.008"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <visual>
+        <origin xyz="0.1 -0.1 0" rpy="0 0 ${pi/4}"/>
+        <geometry>
+          <box size="0.28284 0.008 0.008"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <visual>
+        <origin xyz="-0.1 -0.1 0" rpy="0 0 ${3*pi/4}"/>
+        <geometry>
+          <box size="0.28284 0.008 0.008"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:guard name="GUARD0" parent="ROTOR0" rotation="0 0 0"/>
+  <xacro:guard name="GUARD1" parent="ROTOR1" rotation="0 0 ${pi}"/>
+  <xacro:guard name="GUARD2" parent="ROTOR2" rotation="0 0 ${pi}"/>
+  <xacro:guard name="GUARD3" parent="ROTOR3" rotation="0 0 0"/>
+</robot>
