@@ -13,6 +13,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>rtr_double_arm_v7_description</exec_depend>
+  <exec_depend>rtr_quadcopter_description</exec_depend>
   
   <export>
     <metapackage/>
