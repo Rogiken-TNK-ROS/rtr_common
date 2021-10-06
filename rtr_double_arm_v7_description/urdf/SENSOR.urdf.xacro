@@ -119,7 +119,13 @@
     <parent link="TFRAME"/>
     <child link="Camera15"/>
   </joint>
-
+  <link name="TohokuDepthCamera00"/>
+  <joint name="TohokuDepthCamera00" type="fixed">
+    <origin xyz="0 0 0" rpy="${90*M_PI/180} ${-90*M_PI/180} 0"/>
+    <parent link="TOHKU_ROLL"/>
+    <child link="TohokuDepthCamera00"/>
+  </joint>
+  
   
 <!-- <link name="SWING_TORQUE"> -->
 <!--   </link> -->
