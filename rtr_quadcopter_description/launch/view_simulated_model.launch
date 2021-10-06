@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <param name="use_sim_time" value="true"/>
+  <group ns="quadcopter">
+    <param name="robot_description" command="xacro $(find rtr_quadcopter_description)/xacro/rtr_quadcopter_wrs.urdf.xacro"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns="quadcopter">
+      <remap from="joint_states" to="/quadcopter/joint_states" />
+    </node>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rtr_quadcopter_description)/rviz/view_simulated_model.rviz" />
+  </group>
+
+  <node name="choreonoid" pkg="choreonoid_ros" type="choreonoid" args="$(find rtr_quadcopter_controller)/../cnoid/QuadcopterJoystickWRS.cnoid"/>
+</launch>
