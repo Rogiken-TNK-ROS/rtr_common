@@ -8,6 +8,119 @@
     <child link="Velodyne"/>
   </joint>
 
+  <link name="Camera00"/>
+  <joint name="Camera00" type="fixed">
+    <origin xyz="0.475 0 1.175" rpy="${M_PI/2} ${-80*M_PI/180} 0"/>
+    <parent link="TFRAME"/>
+    <child link="Camera00"/>
+  </joint>
+  
+  <link name="Camera01"/>
+  <joint name="Camera01" type="fixed">
+    <origin xyz="0.55 0 1.175" rpy="${M_PI/2} ${-45*M_PI/180} 0"/>
+    <parent link="TFRAME"/>
+    <child link="Camera01"/>
+  </joint>
+
+  <link name="Camera02"/>
+  <joint name="Camera02" type="fixed">
+    <origin xyz="0.3358 0.3358 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${45*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera02"/>
+  </joint>
+  
+  <link name="Camera03"/>
+  <joint name="Camera03" type="fixed">
+    <origin xyz="0.3889 0.3889 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${45*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera03"/>
+  </joint>
+
+  <link name="Camera04"/>
+  <joint name="Camera04" type="fixed">
+    <origin xyz="0 0.475 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${90*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera04"/>
+  </joint>
+  
+  <link name="Camera05"/>
+  <joint name="Camera05" type="fixed">
+    <origin xyz="0 0.55 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${90*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera05"/>
+  </joint>
+
+  <link name="Camera06"/>
+  <joint name="Camera06" type="fixed">
+    <origin xyz="-0.3358 0.3358 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${135*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera06"/>
+  </joint>
+  
+  <link name="Camera07"/>
+  <joint name="Camera07" type="fixed">
+    <origin xyz="-0.3889 0.3889 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${135*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera07"/>
+  </joint>
+
+  <link name="Camera08"/>
+  <joint name="Camera08" type="fixed">
+    <origin xyz="-0.475 0 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${180*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera08"/>
+  </joint>
+  
+  <link name="Camera09"/>
+  <joint name="Camera09" type="fixed">
+    <origin xyz="-0.55 0 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${180*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera09"/>
+  </joint>
+
+  <link name="Camera10"/>
+  <joint name="Camera10" type="fixed">
+    <origin xyz="-0.3358 -0.3358 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${225*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera10"/>
+  </joint>
+  
+  <link name="Camera11"/>
+  <joint name="Camera11" type="fixed">
+    <origin xyz="-0.3889 -0.3889 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${225*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera11"/>
+  </joint>
+  
+  <link name="Camera12"/>
+  <joint name="Camera12" type="fixed">
+    <origin xyz="0 -0.475 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${270*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera12"/>
+  </joint>
+  
+  <link name="Camera13"/>
+  <joint name="Camera13" type="fixed">
+    <origin xyz="0 -0.55 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${270*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera13"/>
+  </joint>
+
+  <link name="Camera14"/>
+  <joint name="Camera14" type="fixed">
+    <origin xyz="0.3358 -0.3358 1.175" rpy="${M_PI/2} ${-80*M_PI/180} ${315*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera14"/>
+  </joint>
+  
+  <link name="Camera15"/>
+  <joint name="Camera15" type="fixed">
+    <origin xyz="0.3889 -0.3889 1.175" rpy="${M_PI/2} ${-45*M_PI/180} ${315*M_PI/180}"/>
+    <parent link="TFRAME"/>
+    <child link="Camera15"/>
+  </joint>
+
+  
 <!-- <link name="SWING_TORQUE"> -->
 <!--   </link> -->
 <!--   <joint name="SWING_TORQUE_JOINT" type="fixed"> -->
