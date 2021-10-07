@@ -63,6 +63,40 @@
     </visual>
   </link>
 
+  <joint name="UpperRangeSensorJoint" type="fixed">
+    <parent link="BODY"/>
+    <child link="UpperRangeSensor"/>
+    <origin xyz="0.00 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <link name="UpperRangeSensor">
+    <visual>
+      <geometry>
+        <cylinder radius="0.003" length="0.01"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="LowerRangeSensorJoint" type="fixed">
+    <parent link="BODY"/>
+    <child link="LowerRangeSensor"/>
+    <origin xyz="0.00 0 -0.05" rpy="0 0 0"/>
+  </joint>
+
+  <link name="LowerRangeSensor">
+    <visual>
+      <geometry>
+        <cylinder radius="0.003" length="0.01"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
   <!-- Legs -->
   <xacro:macro name="leg" params="name translation">
     <joint name="${name}Joint" type="fixed">
