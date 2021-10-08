@@ -122,43 +122,29 @@
 
   <link name="TohokuDepthCamera00"/>
   <joint name="TohokuDepthCamera00" type="fixed">
-    <origin xyz="0 0.2 -0.2" rpy="${-90*M_PI/180} 0 0"/>
+    <origin xyz="0 0.2 -0.2" rpy="0 ${M_PI} ${M_PI}"/>
     <parent link="TOHKU_ROLL"/>
     <child link="TohokuDepthCamera00"/>
   </joint>
 
-  <!-- <link name="TohokuDepthCamera01"/> -->
-  <!-- <joint name="TohokuDepthCamera01" type="fixed"> -->
-  <!--   <origin xyz="0.2 0 -0.2" rpy="${-90*M_PI/180} 0 ${-90*M_PI/180}"/> -->
-  <!--   <parent link="TOHKU_ROLL"/> -->
-  <!--   <child link="TohokuDepthCamera01"/> -->
-  <!-- </joint> -->
-
-  <link name="TohokuDepthCamera02"/>
-  <joint name="TohokuDepthCamera02" type="fixed">
+  <link name="TohokuDepthCamera01"/>
+  <joint name="TohokuDepthCamera01" type="fixed">
     <origin xyz="0 -0.2 -0.2" rpy="0 ${M_PI} 0"/> 
     <parent link="TOHKU_ROLL"/>
-    <child link="TohokuDepthCamera02"/>
+    <child link="TohokuDepthCamera01"/>
   </joint>
-
-  <!-- <link name="TohokuDepthCamera03"/> -->
-  <!-- <joint name="TohokuDepthCamera03" type="fixed"> -->
-  <!--   <origin xyz="0 -0.2 -0.2" rpy="0 ${M_PI} 0"/>  -->
-  <!--   <parent link="TOHKU_ROLL"/> -->
-  <!--   <child link="TohokuDepthCamera03"/> -->
-  <!-- </joint> -->
 
   <link name="ManiDepthCamera00"/>
   <joint name="ManiDepthCamera00" type="fixed">
-    <origin xyz="0 0.3 -0.1" rpy="${180*M_PI/180} 0 0"/>
+    <origin xyz="0 0.1 -0.3" rpy="0 ${M_PI} ${M_PI}"/>
     <parent link="HANDBASE"/>
     <child link="ManiDepthCamera00"/>
   </joint>
 
-  <link name="ManiDepthCamera02"/>
-  <joint name="ManiDepthCamera02" type="fixed">
-    <origin xyz="0 -0.3 -0.1" rpy="0 ${M_PI} 0"/> 
+  <link name="ManiDepthCamera01"/>
+  <joint name="ManiDepthCamera01" type="fixed">
+    <origin xyz="0 -0.1 -0.3" rpy="0 ${M_PI} 0"/> 
     <parent link="HANDBASE"/>
-    <child link="ManiDepthCamera02"/>
+    <child link="ManiDepthCamera01"/>
   </joint>
 </robot>
