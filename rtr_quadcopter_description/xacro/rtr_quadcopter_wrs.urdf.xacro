@@ -1,4 +1,5 @@
-<robot name="quadcopter_wrs" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="quadcopter_wrs"
+  xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:property name="side" value="0.5"/>
 
   <link name="BODY">
@@ -13,15 +14,23 @@
     </visual>
   </link>
 
-  <joint name="CAMERA_T" type="revolute">
+  <joint name="CAMERA_2" type="revolute">
     <parent link="BODY"/>
-    <child link="CAMERA_T"/>
+    <child link="CAMERA_2"/>
     <origin xyz="0 0 -0.05"/>
     <limit lower="${-pi}" upper="0" velocity="${pi/2}" effort="1"/>
     <axis xyz="0 -1 0"/>
   </joint>
 
-  <link name="CAMERA_T">
+  <joint name="CAMERA_3" type="revolute">
+    <parent link="BODY"/>
+    <child link="CAMERA_3"/>
+    <origin xyz="0 0 0.10"/>
+    <limit lower="${-pi}" upper="0" velocity="${pi/2}" effort="1"/>
+    <axis xyz="0 -1 0"/>
+  </joint>
+
+  <link name="CAMERA_2">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -32,7 +41,7 @@
   </link>
 
   <joint name="CameraJoint" type="fixed">
-    <parent link="CAMERA_T"/>
+    <parent link="CAMERA_2"/>
     <child link="Camera"/>
     <origin xyz="0.03 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
@@ -49,7 +58,7 @@
   </link>
 
   <joint name="Camera2Joint" type="fixed">
-    <parent link="CAMERA_T"/>
+    <parent link="CAMERA_2"/>
     <child link="Camera2"/>
     <origin xyz="0.02 0 -0.02" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
@@ -80,20 +89,36 @@
     </visual>
   </link>
 
-  <joint name="LowerRangeSensorJoint" type="fixed">
+  <!-- <joint name="CAMERA_3" type="revolute">
     <parent link="BODY"/>
-    <child link="LowerRangeSensor"/>
-    <origin xyz="0.00 0 -0.05" rpy="0 0 0"/>
+    <child link="Camera3"/>
+    <origin xyz="0 0 0.10"/>
+    <limit lower="${-pi}" upper="0" velocity="${pi/2}" effort="1"/>
+    <axis xyz="0 -1 0"/>
+  </joint> -->
+
+  <link name="CAMERA_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="Camera3Joint" type="fixed">
+    <parent link="CAMERA_3"/>
+    <child link="Camera3"/>
+    <origin xyz="0.02 0 0.02" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
 
-  <link name="LowerRangeSensor">
+  <link name="Camera3">
     <visual>
       <geometry>
         <cylinder radius="0.003" length="0.01"/>
       </geometry>
-      <material name="red">
-        <color rgba="1.0 0.0 0.0 1.0"/>
-      </material>
+      <material name="red"/>
     </visual>
   </link>
 

@@ -3,7 +3,7 @@
   <param name="use_sim_time" value="true"/>
   <group ns="RTRQuadcopter">
     <param name="robot_description" command="xacro $(find rtr_quadcopter_description)/xacro/rtr_quadcopter_wrs.urdf.xacro"/>
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns="RTRQuadcopter">
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
       <remap from="joint_states" to="/RTRQuadcopter/joint_states" />
     </node>
     <node name="quadcopter_rviz" pkg="rviz" type="rviz" args="-d $(find rtr_quadcopter_description)/rviz/wrs.rviz" />
